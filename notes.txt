@@ -1,0 +1,20 @@
+composer create-project laravel/laravel:^8.0 (nameproject)
+
+composer require livewire/livewire
+php artisan make:livewire ContactForm
+php artisan make:migration create_contacts_table
+php artisan migrate
+
+npm install laravel-mix --save-dev
+
+npm install
+
+npm install -D tailwindcss@3.3.5 postcss autoprefixer
+
+
+php artisan view:clear        # Limpia las vistas compiladas
+php artisan cache:clear       # Limpia la caché general de Laravel
+php artisan route:clear       # Limpia rutas cacheadas
+php artisan config:clear      # Limpia la caché de configuración
+
+rm -rf public/css/* public/js/*
